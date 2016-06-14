@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="org.pi4j.blinkled.Blinkled"
+        name="Blinkled"
+        description="write the number in msec to blink the led e.g 1000 = 1 sec">
+
+
+        <AD id="param3.integer"
+            name="param3.integer"
+            type="Integer"
+            cardinality="0"
+            required="true"
+            default="1000"
+            min="1"
+            description="change this number and click apply in the Kura tab above to see the led blinking"/>
+    </OCD>
+
+    <Designate pid="org.pi4j.blinkled.Blinkled">
+        <Object ocdref="org.pi4j.blinkled.Blinkled"/>
+    </Designate>
+</MetaData>
