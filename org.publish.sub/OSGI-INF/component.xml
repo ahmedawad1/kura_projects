@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" configuration-policy="require" deactivate="deactivate" enabled="true" immediate="true" modified="updated" name="org.publish.sub.test">
+   <implementation class="org.publish.sub.test"/>
+   <property name="service.pid" type="String" value="org.publish.sub.test"/>
+   <service>
+      <provide interface="org.publish.sub.test"/>
+   </service>
+   <reference bind="setDataService" cardinality="1..1" interface="org.eclipse.kura.data.DataService" name="DataService" policy="static" unbind="unsetDataService"/>
+</scr:component>
